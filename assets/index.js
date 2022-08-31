@@ -27,21 +27,22 @@ async function fetchAPI () {
 }
 
 function generateHTML(results){
-    const generatedHTML = '';
+    let generatedHTML = '';
     results.map(result=> {
         generatedHTML +=
 
         `   
         <div class="item">
-    <img src="./assets/images/jikoni-bora.png" alt="jikoni-image">
+    <img src="${result.recipe.image}" alt="jikoni-image">
     <div class="flex-container">
-        <h1 class="title"> This is a recipe</h1>
+        <h1 class="title"> </h1>
         <a href="#" class="view-button"> View Recipe</a>
     </div>
         
         `
 
     })
+    searchResultDiv.innerHTML=generatedHTML
 }
 
 })
