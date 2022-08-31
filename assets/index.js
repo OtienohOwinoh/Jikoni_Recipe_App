@@ -20,12 +20,28 @@ searchForm.addEventListener ('submit', (e) =>{
 async function fetchAPI () {
     const baseURL = `https://api.edamam.com/search?q=pizza&app_id=${APP_ID}&app_key=${APP_key}`;
     const response = await fetch(baseURL)
+    const data = await response.json();
+    generateHTML(data.hits)
     
-    console.log (response);
+    console.log (data);
 }
 
+function generateHTML(results){
+    const generatedHTML = '';
+    results.map(result=> {
+        generatedHTML +=
 
-// https://api.edamam.com/search?q=pizza&app_id=3acb26b3$app_key=${APP_key}
+        `   
+        <div class="item">
+    <img src="./assets/images/jikoni-bora.png" alt="jikoni-image">
+    <div class="flex-container">
+        <h1 class="title"> This is a recipe</h1>
+        <a href="#" class="view-button"> View Recipe</a>
+    </div>
+        
+        `
 
+    })
+}
 
 })
