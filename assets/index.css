@@ -17,6 +17,7 @@ img{
 html{
     font-family: 'Nunito';
     font-size: 12px;
+    font-weight: 600;
 
 }
 
@@ -107,4 +108,17 @@ form ion-icon {
     margin: 20px 20px 0 0;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+.view-button {
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px, 0;
+    background-color: #404041;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    color: white;
+    align-self: flex-start;
+
 }
