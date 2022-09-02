@@ -43,6 +43,12 @@ section{
     font-size: 4rem;
     color: whitesmoke;
     margin-bottom: 30px;
+   
+}
+
+#var {
+    font-weight: 400;
+  
 }
 
 form {
@@ -89,7 +95,7 @@ form ion-icon {
 .item {
    width: 100%;
    border-radius: 8px;
-   background-color: rgb(37, 37, 37);
+   background-color: #441a08;
    padding: 15px;
    overflow: hidden;
    margin-top: 20px;
