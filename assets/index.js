@@ -38,6 +38,7 @@ function generateHTML(results){
         <h1 class="title"> ${result.recipe.label}</h1>
         <a href="${result.recipe.url}" class="view-button" target ="_blank"> View Recipe</a>
     </div>
+    </div>
         
         `
 
