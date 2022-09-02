@@ -28,7 +28,7 @@ section{
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color: rgb(26, 26, 27);
+    background-color: #E99410;
 }
 
 .container {
@@ -49,7 +49,7 @@ form {
     width: 90%;
     max-width: 400px;
     margin: 20px auto;
-    background-color: rgb(223, 223, 223);
+    background-color:whitesmoke;
     border-radius: 4px;
 }
 
