@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 const searchForm = document.querySelector('form');
+const searchButton = document.querySelector('#searchButton');
 const searchResultDiv = document.querySelector ('.search-result');
 const container = document.querySelector ('container');
 let searchQuery = '';
 const APP_ID = '3acb26b3';
 const APP_key = '3b074862a1b0a5a50c91b34c1c53ba25';
+
 
 
 
@@ -16,6 +18,14 @@ searchForm.addEventListener ('submit', (e) =>{
 
     fetchAPI();
 });
+
+searchButton.addEventListener ('click', (e) =>{
+    e.preventDefault();
+    searchQuery = searchForm.querySelector('input').value;
+
+    fetchAPI();
+});
+
 
 async function fetchAPI () {
     const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}`;
